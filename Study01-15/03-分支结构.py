@@ -8,8 +8,9 @@
 
 count = 0
 
+print('{:*^40}'.format('重要提示：猜数字，输入10以内的正整数'))
 while True:
-    am = input('{}'.format('请输入一个数： '))
+    am = input('{}'.format('请输入一个数>>>'))
     if am == '6':
         print('{:=^40}'.format('猜对啦！'))
         break
