@@ -1,26 +1,24 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-''' 
-用户身份验证案例
-'''
-
-# user = input('请输入用户名： ')
-# psd = input('请输入密码： ')
-
-# if user == 'admin' and psd == '123456':
-#     print('身份验证成功！')
-# else:
-#     print('哪来的回哪去！')
-
-
 
 '''
-For 循环实现1~100求和
+猜数字，10以内的正整数，并记录猜了多少次
 '''
 
-sum = 0
-for i in range(101):
-    sum += i
+count = 0
 
-print(sum)
+while True:
+    am = input('{}'.format('请输入一个数： '))
+    if am == '6':
+        print('{:=^40}'.format('猜对啦！'))
+        break
+    elif am > '6':
+        print('{:=^40}'.format('你输入的数大了点，请重新输入。'))
+        count += 1
+    else:
+        print('{:=^40}'.format('你输入的数小了点，请重新输入。'))
+        count += 1
+
+print('你一共猜了>>> {}次，够笨的'.format(count))
+        
