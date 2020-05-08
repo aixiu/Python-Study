@@ -1,14 +1,25 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-print("开始运行系统")
 
+'''
+猜数字，10以内的正整数，并记录猜了多少次
+'''
+
+count = 0
+
+print('{:*^40}'.format('重要提示：猜数字，输入10以内的正整数'))
 while True:
-    user = input("请输入用户名：")
-    pwd =  input("请输入密码：")
-    if user == 'wupeiqi' and pwd == "oldboy":
-        print("登录成功")
+    am = input('{}'.format('请输入一个数>>>'))
+    if am == '6':
+        print('{:=^40}'.format('猜对啦！'))
         break
+    elif am > '6':
+        print('{:=^40}'.format('你输入的数大了点，请重新输入。'))
+        count += 1
     else:
-        print("用户名或密码错误，请重新登录")
-print("系统结束")
+        print('{:=^40}'.format('你输入的数小了点，请重新输入。'))
+        count += 1
+
+print('你一共猜了>>> {}次，够笨的'.format(count))
+        
