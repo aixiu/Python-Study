@@ -21,5 +21,7 @@ while True:
         print('{:=^40}'.format('你输入的数小了点，请重新输入。'))
         count += 1
 
-print('你一共猜了>>> {}次，够笨的'.format(count))
-        
+if count <= 2:
+    print('你一共猜了>>> {}次，真聪明！'.format(count))
+else:
+    print('你一共猜了>>> {}次，够笨的'.format(count))    
