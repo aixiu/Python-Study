@@ -71,3 +71,47 @@ print(llst)
 
 
 
+
+def eat():
+    lst = []
+    for i in range(1,11):
+        lst.append('包子'+str(i))
+    return lst
+e = eat()
+print(e)
+
+
+# def eat():
+#     for i in range(1,11):
+#         yield '包子'+str(i)
+# e = eat()
+# print(e.__next__())
+
+
+def eat():
+    for i in range(1,10000):
+        a = yield '包子'+str(i)
+        print('a is',a)
+        b = yield '窝窝头'
+        print('b is', b)
+e = eat()
+print(e.__next__())
+print(e.send('大葱'))
+# print(e.send('大蒜'))
+
+
+def func():
+    lst1 = ['卫龙','老冰棍','北冰洋','牛羊配']
+    lst2 = ['馒头','花卷','豆包','大饼']
+    yield from lst1
+    yield from lst2
+g = func()
+for i in g:
+    print(i)
+
+
+lst = ['python%s' % i for i in range(1, 19)]
+print(lst)
+
+lst = ['python{}'.format(i) for i in range(1, 20)]
+print(lst)
