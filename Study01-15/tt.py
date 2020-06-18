@@ -115,3 +115,19 @@ print(lst)
 
 lst = ['python{}'.format(i) for i in range(1, 20)]
 print(lst)
+
+
+import time
+def f():
+    start_time = time.time()
+    print("hello")
+    time.sleep(1)
+    print("world")
+    end_time = time.time()
+
+    execution_time = (end_time - start_time)*1000
+    print("time is %d ms" %execution_time)
+    print(start_time)
+    print(start_time)
+    
+f()
