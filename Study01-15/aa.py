@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-<<<<<<< HEAD
 """
 Created on Mon Nov 14 01:01:29 2016
  
@@ -26,7 +25,6 @@ def func1(arg):
 #调用函数时，传入一个字符串作为参数
 aa = func1("my name is tantianran")
 print (aa)
-=======
 class Human:
     """
     此类主要是构建人类
@@ -74,4 +72,3 @@ def daqian(qian):
 
 daqian('打钱')
 daqian('不给')
->>>>>>> origin/master
