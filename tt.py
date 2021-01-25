@@ -34,3 +34,7 @@ class Student(object):
 
 bart = Student('liang', 88)
 print(bart.Hname, bart.Hscore, bart.get_grade())
+
+lst=[1,'xiaoming',29.5,'123456644']
+for _ in lst:
+    print(f'{_}')
