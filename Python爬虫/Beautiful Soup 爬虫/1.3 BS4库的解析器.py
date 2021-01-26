@@ -4,7 +4,7 @@
 import bs4
 
 #首先我们先将 html 文件以 lxml 的方式做成一锅汤
-soup = bs4.BeautifulSoup(open('./demo.html'), 'lxml')
+soup = bs4.BeautifulSoup(open('./demo.html'), 'html.parser')
 # soup = bs4.BeautifulSoup(open('./demo.html'), 'lxml', from_encoding='utf-8')
 
 # print(soup.prettify())
