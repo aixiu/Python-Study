@@ -81,7 +81,8 @@ def get_content(url):
     html = get_html(url)
 
     # 我们来做一锅汤
-    soup = BeautifulSoup(html, 'html.parser')
+    # soup = BeautifulSoup(html, 'html.parser')
+    soup = BeautifulSoup(html, 'lxml')
 
     # 按照之前的分析，我们找到所有具有‘ j_thread_list clearfix’属性的li标签。返回一个列表类型。
     liTags = soup.find_all('li', attrs={"class": 'j_thread_list clearfix thread_item_box'})
