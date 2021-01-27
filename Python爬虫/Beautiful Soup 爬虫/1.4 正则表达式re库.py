@@ -88,3 +88,6 @@ str2 = 'hssso'
 re1 = re.compile(r'h.{3}o')
 print(re1.findall(str1))
 print(re1.findall(str2))
+
+
+# 本文链接：https://zhuanlan.zhihu.com/p/26701898
