@@ -76,7 +76,7 @@ def get_content(url):
                 f.write('小说名：{:<} \t 小说地址：{:<} \n'.format(title, link))
             # print(link)
     print('完本小说地址收集完毕')
-    # return name
+    return url_list
 
 # 获取单本小说的所有章节链接:
 def get_txt_url(url):
@@ -92,37 +92,78 @@ def get_txt_url(url):
     # 因，最新章节和第一章标签一样，且最新在上边，故，用下 [1] 来获取第一章的
     lista = soup.find_all('ul', class_='section-list fix')[1]
 
-    for i in lista.find_all('a'):
+    for i in lista.find('a'):
         link = 'http://www.qu.la' + i.get('href')
         url_list.append(link)
-    
-    txt_name = soup.select('div > h1')[1].string.strip()
+
+    # CSS 选择器的使用 相同 DIV 下的第二个 h1
+    txt_name = soup.select('div > h1')[1].string.strip()  
     with open('./小说/{}.txt'.format(txt_name), 'a+', encoding='utf-8') as f:
         f.write('小说标题：{} \n'.format(txt_name))
 
     return url_list, txt_name
 
-# # 获取单本小说的所有章节链接:
-# def get_txt_url(url):
-#     '''
-#     获取该小说每个章节的url地址：
-#     并创建小说文件
+# 获取单本小说的所有章节链接:
+def get_one_txt(url, txt_name):
+    '''
+    获取小说每个章节的文本
+    并写入到本地
+    '''
 
-#     '''
-#     url_list = []
-#     html = get_html(url)
-#     soup = BeautifulSoup(html, 'lxml')
+    # replace() 方法把字符串中的 old（旧字符串） 替换成 new(新字符串)，
+    # 如果指定第三个参数max，则替换不超过 max 次。
+    html = get_html(url).replace('<br>', '111')
+    soup = BeautifulSoup(html, 'lxml')
 
-#     lista =  soup.find_all('li')
-#     txt_name = soup.find('div', class_='top').h1.text
-#     with open('./小说/{}.txt'.format(txt_name), 'a+', encoding='utf-8') as f:
-#         f.write('小说标题：{} \n'.format(txt_name))
-#     for url in lista:
-#         url_list.append('http://www.qu.la/' + url.a['href'])
+    try:
+        txt = soup.find('div', class_='content').text.replace('chaptererror();', '')
+        title = soup.find('h1', class_='title').string.strip()
 
-#     return url_list, txt_name
-#     # print(txt_name)
+        with open('./小说/{}.txt'.format(txt_name), 'a', encoding='utf-8') as f:
+            f.write(title + '\n\n')
+            f.write(txt)
 
+            print('当前小说：{} 当前章节{} 已经下载完毕'.format(txt_name, title))
+
+
+
+        # print('\n{:=^40}\n'.format('华丽的分割线'))
+
+        # print(txt, title)
+    except:
+        print('someting wrong')
+
+# def get_all_txt(url_list):
+#     for url in url_list:
+#         # 便利获取当前小说的所有章节的目录，
+#         # 并且生成小说头文件
+
+#         page_list, txt_name = get_txt_url(url)
+        
+#         """ for page_url in page_list:
+#             # 遍历每一篇小说，并下载到目录
+#             get_one_txt(page_url, txt_name)
+#             print('当前进度 {}% '.format(url_list.index(url) / len(url_list) * 100)) """
+        
+
+    
+# def main():
+#     base_url = 'https://www.qu.la/paihangbang/'
+#     url_list = get_content(base_url)
+#     url_list = list(set(url_list))
+#     txt_name = get_txt_url(url_list)
+#     get_one_txt(url_list)
+
+
+
+# if __name__ == '__main__':
+#     main()
+    
+    
+    
+
+# name = 
+# aa = get_one_txt('https://www.qu.la/book/168/2021571.html', 'aaaa')
 aa = get_txt_url('https://www.qu.la/book/168/index_1.html')
 # aa = get_content('https://www.qu.la/paihangbang/')
 print(aa)

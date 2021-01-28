@@ -22,5 +22,5 @@ print(f"{name}, 今天你开心嘛!")  # f-字符串格式化
 
 # 常用：
 
-print('\n{:=^40}'.format('华丽的分割线'))
+print('\n{:=^40}\n'.format('华丽的分割线'))
 print(f'10年后共有: {money:.2f}')
