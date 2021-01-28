@@ -85,40 +85,44 @@ def get_txt_url(url):
     并创建小说文件
 
     '''
-    ulr_list = []
-    html = get_html(url)
-    soup = BeautifulSoup(html, 'lxml')
-
-    lista =  soup.find_all('li')
-    txt_name = soup.find('h1').text.strip()
-    with open('./小说/{}.txt', 'a+', encoding='utf-8'.format(txt_name)) as f:
-        f.write('小说标题：{} \n'.format(txt_name))
-    for url in lista:
-        url_list.append('http://www.qu.la/' + url.a['href'])
-
-    return url_list, txt_name
-
-# 获取单本小说的所有章节链接:
-def get_txt_url(url):
-    '''
-    获取该小说每个章节的url地址：
-    并创建小说文件
-
-    '''
     url_list = []
     html = get_html(url)
     soup = BeautifulSoup(html, 'lxml')
 
-    lista =  soup.find_all('li')
-    txt_name = soup.find('div', class_='top').h1.text
+    # 因，最新章节和第一章标签一样，且最新在上边，故，用下 [1] 来获取第一章的
+    lista = soup.find_all('ul', class_='section-list fix')[1]
+
+    for i in lista.find_all('a'):
+        link = 'http://www.qu.la' + i.get('href')
+        url_list.append(link)
+    
+    txt_name = soup.select('div > h1')[1].string.strip()
     with open('./小说/{}.txt'.format(txt_name), 'a+', encoding='utf-8') as f:
         f.write('小说标题：{} \n'.format(txt_name))
-    for url in lista:
-        url_list.append('http://www.qu.la/' + url.a['href'])
 
     return url_list, txt_name
-    # print(txt_name)
 
-aa = get_txt_url('https://www.qu.la/book/168/')
+# # 获取单本小说的所有章节链接:
+# def get_txt_url(url):
+#     '''
+#     获取该小说每个章节的url地址：
+#     并创建小说文件
+
+#     '''
+#     url_list = []
+#     html = get_html(url)
+#     soup = BeautifulSoup(html, 'lxml')
+
+#     lista =  soup.find_all('li')
+#     txt_name = soup.find('div', class_='top').h1.text
+#     with open('./小说/{}.txt'.format(txt_name), 'a+', encoding='utf-8') as f:
+#         f.write('小说标题：{} \n'.format(txt_name))
+#     for url in lista:
+#         url_list.append('http://www.qu.la/' + url.a['href'])
+
+#     return url_list, txt_name
+#     # print(txt_name)
+
+aa = get_txt_url('https://www.qu.la/book/168/index_1.html')
 # aa = get_content('https://www.qu.la/paihangbang/')
 print(aa)
