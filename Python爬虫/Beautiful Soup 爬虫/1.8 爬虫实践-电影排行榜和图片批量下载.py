@@ -2,8 +2,6 @@
 爬取最新电影排行榜单
 url：http://dianying.2345.com/top/
 使用 requests --- bs4 线路
-Python版本： 3.6
-OS： mac os 12.12.4
 '''
 
 import requests
@@ -44,18 +42,22 @@ def get_content(url):
         #这里用bs4库迭代找出“pACtor”的所有子孙节点，即每一位演员解决了名字分割的问题
         actors = top.find('p',class_='pActor')
         actor= ''
+        # actor= actors.contents[1].string
         for act in actors.contents:
-            actor = actor + act.string +' '
+            actor = actor + act.string.strip() + ' '        
+
+        # print(actor)
         #找到影片简介
         intro = top.find('p',class_='pTxt pIntroShow').text
 
-        print("片名：{}\t{}\n{}\t{} \n \n ".format(name,time,actor,intro) )
-        # print('这是图片{}'.format(img_url))
-        
+        print("片名：{}\t{}\n{}\n{} \n \n ".format(name, time, actor, intro) )
+        # print('这是图片{}'.format(requests.get("http:"+img_url.split("jpg")[-2]+"jpg").text))
+
+
         #我们来吧图片下载下来：
-        with open('./img/'+name+'.png','wb+') as f:
-            # f.write(requests.get(img_url).content)   # 此行有问题
-            f.write(requests.get("http:"+img_url.split("jpg")[-2]+"jpg").content)
+        # with open('./img/'+name+'.png','wb+') as f:
+        #     # f.write(requests.get(img_url).content)   # 此行有问题
+        #     f.write(requests.get("http:"+img_url.split("jpg")[-2]+"jpg").content)
 
             #说明  aa = '//imgwx1.2345.com/dypcimg/img/9/67/sup203867_223x310.jpg?1562057779'
             # aa.split('jpg')  输出为： ['//imgwx1.2345.com/dypcimg/img/9/67/sup203867_223x310.', '?1562057779']
