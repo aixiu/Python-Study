@@ -50,8 +50,10 @@ def get_content(url):
         #找到影片简介
         intro = top.find('p',class_='pTxt pIntroShow').text
 
+        print('缩略图 >>> {}'.format("http:"+img_url.split("jpg")[-2]+"jpg"))
+
         print("片名：{}\t{}\n{}\n{} \n \n ".format(name, time, actor, intro) )
-        # print('这是图片{}'.format(requests.get("http:"+img_url.split("jpg")[-2]+"jpg").text))
+
 
 
         #我们来吧图片下载下来：
@@ -75,3 +77,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# 本文链接：https://zhuanlan.zhihu.com/p/26786056

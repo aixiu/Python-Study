@@ -112,7 +112,7 @@ def get_one_txt(url, txt_name):
 
     # replace() 方法把字符串中的 old（旧字符串） 替换成 new(新字符串)，
     # 如果指定第三个参数max，则替换不超过 max 次。
-    html = get_html(url).replace('<br>', '111')
+    html = get_html(url).replace('<br>', ' ')
     soup = BeautifulSoup(html, 'lxml')
 
     try:
@@ -167,3 +167,6 @@ def get_one_txt(url, txt_name):
 aa = get_txt_url('https://www.qu.la/book/168/index_1.html')
 # aa = get_content('https://www.qu.la/paihangbang/')
 print(aa)
+
+
+# 本文链接：https://zhuanlan.zhihu.com/p/26756909
