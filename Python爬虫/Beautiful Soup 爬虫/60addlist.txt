@@ -1,0 +1,32 @@
+插件名： 怀旧魔兽猫盒子【官方怀旧版】 - 只为怀旧Wower var0.14.5 	 链接： http://60addons.com/bbs/new/topic/1640-1 	 浏览次数： 611031 
+插件名： Questie 任务助手 v5.9.0 	 链接： http://60addons.com/bbs/new/topic/1738-1 	 浏览次数： 205467 
+插件名： ClassicCodex [原pfQuest]强大的全能型任务数据库 v1.3.9 ala深度精简 	 链接： http://60addons.com/bbs/new/topic/1626-1 	 浏览次数： 332712 
+插件名： WebDKP Classic - 60年代最好用的DKP管理插件(附教程) v13.9 	 链接： http://60addons.com/bbs/new/topic/1790-1 	 浏览次数： 186462 
+插件名： Guidelime 【新手福音】保姆式高定制任务升级导航插件 v1.037 	 链接： http://60addons.com/bbs/new/topic/1639-1 	 浏览次数： 522004 
+插件名： BestInSlotClassic - BIS 全职业全天赋全阶段BIS装备查看 v2.3 	 链接： http://60addons.com/bbs/new/topic/2069-1 	 浏览次数： 87648 
+插件名： 【整合】DestinyUI for Classic v2.8.6精简版 	 链接： http://60addons.com/bbs/new/topic/1660-1 	 浏览次数： 274699 
+插件名： DBM - classic 团本首领警报 (内含全部第三方全音效支持包及战场PVP模块) 1.13.41 	 链接： http://60addons.com/bbs/new/topic/1420-1 	 浏览次数： 227986 
+插件名： ElvUI - 知名ui套件 v1.24 [含各种第三方模块&UI下载] Classic 	 链接： http://60addons.com/bbs/new/topic/1628-1 	 浏览次数： 181596 
+插件名： ModernTargetFrame 目标头像状态增强 v1.3.1 	 链接： http://60addons.com/bbs/new/topic/2067-1 	 浏览次数： 48420 
+插件名： PhantomPlates 极简默认姓名板显血/仇恨增强 v1.2.1 	 链接： http://60addons.com/bbs/new/topic/2068-1 	 浏览次数： 23929 
+插件名： Pawn 装备属性权重比较 v2.3.24 	 链接： http://60addons.com/bbs/new/topic/1897-1 	 浏览次数： 42204 
+插件名： ClassicCastbars 目标框架/姓名板施法条 v1.3.0 	 链接： http://60addons.com/bbs/new/topic/1416-1 	 浏览次数： 151767 
+插件名： HealBot 强大的治疗助手及治疗框架 v1.13.4.1-classic 	 链接： http://60addons.com/bbs/new/topic/1648-1 	 浏览次数： 111155 
+插件名： MissingTradeSkillsList 缺失配方查询 v1.13.40 	 链接： http://60addons.com/bbs/new/topic/1875-1 	 浏览次数： 40886 
+插件名： !BlizzardRaidFramesFix 暴雪团队框修复 v1.2.19 	 链接： http://60addons.com/bbs/new/topic/2058-1 	 浏览次数： 16904 
+插件名： RWA 仇恨提醒警报 v0.2 	 链接： http://60addons.com/bbs/new/topic/2073-1 	 浏览次数： 17242 
+插件名： ClassicAuraDurations Buff/debuff框架持续旋转 v1.13.52 	 链接： http://60addons.com/bbs/new/topic/1480-1 	 浏览次数： 120529 
+插件名： WeakAuras2 神级法术提醒 & 计时 & 高DIY插件 v2.16.6-classic 	 链接： http://60addons.com/bbs/new/topic/1426-1 	 浏览次数： 199776 
+插件名： NeatPlates 精致强大的姓名板 v1.13.4.3-Classic 	 链接： http://60addons.com/bbs/new/topic/1641-1 	 浏览次数： 229724 
+插件名： Skillet 扩展商业技能面板增强  r152 	 链接： http://60addons.com/bbs/new/topic/1793-1 	 浏览次数： 43429 
+插件名： Leatrix_Plus 功能百宝箱(类似Lazypig) v1.13.55 	 链接： http://60addons.com/bbs/new/topic/1452-1 	 浏览次数： 57236 
+插件名： Leatrix_Maps 大地图综合增强,显示未探测区域&副本位置图标 v1.13.55 	 链接： http://60addons.com/bbs/new/topic/1598-1 	 浏览次数： 62007 
+插件名： Spy 野外敌对警报监视 v1.0.24 Classic 	 链接： http://60addons.com/bbs/new/topic/1662-1 	 浏览次数： 68001 
+插件名： RaidLedger 团队账本/G团助手 v1.4.4 	 链接： http://60addons.com/bbs/new/topic/1965-1 	 浏览次数： 60713 
+插件名： BattleInfo 战场场次新旧查看 & 更多战场信息 v2.3.9 	 链接： http://60addons.com/bbs/new/topic/2037-1 	 浏览次数： 62740 
+插件名： GearMenu PVP装备管理&速换 v1.3.0 	 链接： http://60addons.com/bbs/new/topic/1760-1 	 浏览次数： 151524 
+插件名： NDui Classic 国人原创精致UI v1.17.0 	 链接： http://60addons.com/bbs/new/topic/1697-1 	 浏览次数： 152861 
+插件名： Details 老牌轻量级数据统计插件 v1.13.4.197.142 	 链接： http://60addons.com/bbs/new/topic/1495-1 	 浏览次数： 128094 
+插件名： Diminish 框架CC&DR递减逻辑跟踪器 v2.2.9 	 链接： http://60addons.com/bbs/new/topic/2017-1 	 浏览次数： 20450 
+插件名： BastionEPGP 另一款EPGP制度插件 v1.3.3 	 链接： http://60addons.com/bbs/new/topic/2014-1 	 浏览次数： 12893 
+插件名： 【整合】洛萨之子官方怀旧服<插件包> v0.22 BEAT 	 链接： http://60addons.com/bbs/new/topic/1846-1 	 浏览次数： 39159 

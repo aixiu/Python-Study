@@ -3,8 +3,7 @@
 
 """ 
 本次要爬的是<< http://60addons.com/ >>，插件名和所有插件下载页面。
-贴吧地址 :
-http://60addons.com/bbs/new/index/1
+插件地址:  http://60addons.com/bbs/new/index/1
 """
 
 from bs4 import BeautifulSoup
