@@ -6,7 +6,7 @@
 import scrapy
 
 
-class ZimukuItem(scrapy.Item):
+class WeatherItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    subname = scrapy.Field() #字母的名字
+    pass

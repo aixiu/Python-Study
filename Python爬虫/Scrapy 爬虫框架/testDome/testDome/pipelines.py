@@ -8,11 +8,11 @@
 from itemadapter import ItemAdapter
 
 
-class ZimukuPipeline:
+class TestdomePipeline:
     def process_item(self, item, spider):
-        
+
         # 只要求简单的话，
         # 我们把爬到的结果打印一下吧
         print(item)
-
+        
         return item
