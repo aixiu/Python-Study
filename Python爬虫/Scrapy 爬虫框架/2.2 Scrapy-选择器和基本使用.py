@@ -7,6 +7,12 @@ XPath 是一门在xml文档中查找信息的语言，它可以在XML文档中�
 菜鸟教程-Xpath：XPath 教程 | 菜鸟教程  https://www.runoob.com/xpath/xpath-tutorial.html
 在网络爬虫中，我们只需要利用XPath来采集数据，所以只要掌握一些基本语法，就可以上手使用了。
 '''
+from scrapy.selector import Selector
+
+with open('./demo.xml', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+
 
 
 
