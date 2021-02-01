@@ -45,5 +45,7 @@ class SytianqiSpider(scrapy.Spider):
             item = WeatherItem()
 
             # 观察网页，知道h3标签下的不单单是一行str，我们用trick的方式将它连接起来
-            date = ''
-            for datetitle in day.xpath()
+            item['date'] = day.xpath('./ul/li/text()').extract()[0]
+            item['week'] = day.xpath('./ul/li/text()').extract())[1]
+            item['img'] = day.xpath('./ul[@class='week']/li/img/@src').extract()[0]
+            item['date'] = day.xpath('./ul/li/text()').extract[0]
